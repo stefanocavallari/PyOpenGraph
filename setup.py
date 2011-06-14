@@ -1,10 +1,11 @@
 from distutils.core import setup
 
 setup(
-    name = 'PyOpenGraph',
+    name = 'pyopengraph',
     version = '0.2',
-    description = 'PyOpenGraph is a library written in Python for parsing Open Graph protocol information from web sites.',
-    packages = ['PyOpenGraph', ],
+    description = 'pyopengraph is a library written in Python for parsing Open Graph protocol information from web sites.',
+    packages = ['pyopengraph', ],
+    package_dir={'pyopengraph': 'pyopengraph'},
     author = 'Gerson Minichiello',
     author_email = 'gerson.minichiello@gmail.com',
     url='http://github.com/minichiello/PyOpenGraph',
@@ -36,7 +37,7 @@ To install, download the archive at http://pypi.python.org/pypi/PyOpenGraph and 
 -------
 ::
 
-    import PyOpenGraph
+    from pyopengraph import PyOpenGraph
 
     og = PyOpenGraph('http://www.rottentomatoes.com/m/10011268-oceans/')
 
