@@ -11,6 +11,9 @@ setup(
     download_url = 'http://pypi.python.org/pypi/PyOpenGraph',
     platforms = 'Any',
     license = 'MIT License',
+    install_requires=[
+        'rdfadict>=0.5,<2.0',
+        ],
     long_description='''\
 =============
  PyOpenGraph
